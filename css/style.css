@@ -45,6 +45,10 @@ p {
     color: white;
 }
 
+.time:hover {
+    color: #FF784F;
+}
+
 .event {
     background-color: #fafafa;
     padding: 15px 5px;
@@ -52,13 +56,13 @@ p {
     margin: auto;
 }
 
-/* background-color: #2C4251;
-color: white;
-border-right: 3px solid white; */
+.event:hover {
+    font-weight: 500;
+}
 
-
-/* background-color: #ebebeb; */
-
+.event p:focus {
+    font-weight: 500;
+}
 
 .save {
     background-color: #FF784F;
@@ -87,6 +91,32 @@ border-right: 3px solid white; */
 
 .save:hover .open {
     display: inline-block;
+}
+
+/* Clear schedule styles */
+
+.btn-info {
+    margin: 0 auto;
+    display: block;
+    background-color: #2C4251;
+    border-color: #2C4251;
+}
+
+.btn-info:hover {
+    margin: 0 auto;
+    display: block;
+    background-color: #FF784F;
+    border-color: #FF784F;
+}
+
+.btn-primary {
+    background-color: #FF784F;
+    border-color: #FF784F;
+}
+
+.btn-primary:hover {
+    background-color: #2C4251;
+    border-color: #2C4251;
 }
 
 /* Footer styles */

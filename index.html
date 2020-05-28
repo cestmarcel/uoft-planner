@@ -18,23 +18,25 @@
         <span class="navbar-brand mb-0 h1">Marcel Thiemann</span>
     </nav>
     <div class="jumbotron">
-        <h1 class="display-4">Daily planner</h1>
-        <p>This is your daily schedule for today, <b><span id="header-date"></span></b>.</p>
-        <hr class="my-4">
-        <p id="notification">Below you'll find an overview of your upcoming events.</p>
+        <div class="container">
+            <h1 class="display-4">Daily planner</h1>
+            <p>This is your daily schedule for today, <b><span id="header-date"></span></b>.</p>
+            <hr class="my-4">
+            <p id="notification">Below you'll find an overview of your upcoming events.</p>
+        </div>
     </div>
 
     <!-- Timeslots -->
     <div class="container">
         <!-- 8.00a -->
         <div class="row 8a">
-            <div class="col-sm-2 time">
+            <div class="col-2 time">
                 <p>8.00am</p>
             </div>
-            <div id="8h" class="col-sm-8 event" data-hour="8">
-                <p contentEditable>I am a sample event</p>
+            <div id="8" class="col-8 event"  data-toggle="tooltip" data-placement="top" data-trigger="focus" title="Don't forget to save your change by clicking the save button on the right!">
+                <p id="p8" contentEditable>I am a sample event</p>
             </div>
-            <div class="col-sm-2 save">
+            <div onclick="addEvent('8')" class="col-2 save">
                 <svg class="bi bi-lock-fill locked" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="9" x="2.5" y="7" rx="2"/>
                     <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
@@ -46,13 +48,13 @@
         </div>
         <!-- 9.00a -->
         <div class="row 9a">
-            <div class="col-sm-2 time">
+            <div class="col-2 time">
                 <p>9.00am</p>
             </div>
-            <div id="9h" class="col-sm-8 event" data-hour="9">
+            <div id="9" class="col-8 event" data-toggle="tooltip" data-placement="top" data-trigger="focus" title="Don't forget to save your change by clicking the save button on the right!" >
                 <p contentEditable>I am a sample event</p>
             </div>
-            <div class="col-sm-2 save">
+            <div onclick="addEvent('9')" class="col-2 save">
                 <svg class="bi bi-lock-fill locked" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="9" x="2.5" y="7" rx="2"/>
                     <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
@@ -64,13 +66,13 @@
         </div>
         <!-- 10.00a -->
         <div class="row 10a">
-            <div class="col-sm-2 time">
+            <div class="col-2 time">
                 <p>10.00am</p>
             </div>
-            <div id="10h" class="col-sm-8 event" data-hour="10">
+            <div id="10" class="col-8 event" data-toggle="tooltip" data-placement="top" data-trigger="focus" title="Don't forget to save your change by clicking the save button on the right!">
                 <p contentEditable>I am a sample event</p>
             </div>
-            <div class="col-sm-2 save">
+            <div onclick="addEvent('10')" class="col-2 save">
                 <svg class="bi bi-lock-fill locked" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="9" x="2.5" y="7" rx="2"/>
                     <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
@@ -82,13 +84,13 @@
         </div>
         <!-- 11.00a -->
         <div class="row 11a">
-            <div class="col-sm-2 time">
+            <div class="col-2 time">
                 <p>11.00am</p>
             </div>
-            <div id="11h" class="col-sm-8 event" data-hour="11">
+            <div id="11" class="col-8 event" data-toggle="tooltip" data-placement="top" data-trigger="focus" title="Don't forget to save your change by clicking the save button on the right!">
                 <p contentEditable>I am a sample event</p>
             </div>
-            <div class="col-sm-2 save">
+            <div onclick="addEvent('11')" class="col-2 save">
                 <svg class="bi bi-lock-fill locked" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="9" x="2.5" y="7" rx="2"/>
                     <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
@@ -100,13 +102,13 @@
         </div>
         <!-- 12.00p -->
         <div class="row 12p">
-            <div class="col-sm-2 time">
+            <div class="col-2 time">
                 <p>12.00pm</p>
             </div>
-            <div id="12h" class="col-sm-8 event" data-hour="12">
+            <div id="12" class="col-8 event" data-toggle="tooltip" data-placement="top" data-trigger="focus" title="Don't forget to save your change by clicking the save button on the right!">
                 <p contentEditable>I am a sample event</p>
             </div>
-            <div class="col-sm-2 save">
+            <div onclick="addEvent('12')" class="col-2 save">
                 <svg class="bi bi-lock-fill locked" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="9" x="2.5" y="7" rx="2"/>
                     <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
@@ -118,13 +120,13 @@
         </div>
         <!-- 1.00p -->
         <div class="row 1p">
-            <div class="col-sm-2 time">
+            <div class="col-2 time">
                 <p>1.00pm</p>
             </div>
-            <div id="13h" class="col-sm-8 event" data-hour="13">
+            <div id="13" class="col-8 event" data-toggle="tooltip" data-placement="top" data-trigger="focus" title="Don't forget to save your change by clicking the save button on the right!">
                 <p contentEditable>I am a sample active event</p>
             </div>
-            <div class="col-sm-2 save">
+            <div onclick="addEvent('13')" class="col-2 save">
                 <svg class="bi bi-lock-fill locked" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="9" x="2.5" y="7" rx="2"/>
                     <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
@@ -136,13 +138,13 @@
         </div>
         <!-- 2.00p -->
         <div class="row 2p">
-            <div class="col-sm-2 time">
+            <div class="col-2 time">
                 <p>2.00pm</p>
             </div>
-            <div id="14h" class="col-sm-8 event" data-hour="14">
+            <div id="14" class="col-8 event" data-toggle="tooltip" data-placement="top" data-trigger="focus" title="Don't forget to save your change by clicking the save button on the right!">
                 <p contentEditable>I am a sample event</p>
             </div>
-            <div class="col-sm-2 save">
+            <div onclick="addEvent('14')" class="col-2 save">
                 <svg class="bi bi-lock-fill locked" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="9" x="2.5" y="7" rx="2"/>
                     <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
@@ -154,13 +156,13 @@
         </div>
         <!-- 3.00p -->
         <div class="row 3p">
-            <div class="col-sm-2 time">
+            <div class="col-2 time">
                 <p>3.00pm</p>
             </div>
-            <div id="15h" class="col-sm-8 event" data-hour="15">
+            <div id="15" class="col-8 event" data-toggle="tooltip" data-placement="top" data-trigger="focus" title="Don't forget to save your change by clicking the save button on the right!">
                 <p contentEditable>I am a sample event</p>
             </div>
-            <div class="col-sm-2 save">
+            <div onclick="addEvent('15')" class="col-2 save">
                 <svg class="bi bi-lock-fill locked" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="9" x="2.5" y="7" rx="2"/>
                     <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
@@ -172,13 +174,13 @@
         </div>
         <!-- 4.00p -->
         <div class="row 4p">
-            <div class="col-sm-2 time">
+            <div class="col-2 time">
                 <p>4.00pm</p>
             </div>
-            <div id="16h" class="col-sm-8 event" data-hour="16">
+            <div id="16" class="col-8 event" data-toggle="tooltip" data-placement="top" data-trigger="focus" title="Don't forget to save your change by clicking the save button on the right!">
                 <p contentEditable>I am a sample event</p>
             </div>
-            <div class="col-sm-2 save">
+            <div onclick="addEvent('16')" class="col-2 save">
                 <svg class="bi bi-lock-fill locked" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="9" x="2.5" y="7" rx="2"/>
                     <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
@@ -190,13 +192,13 @@
         </div>
         <!-- 5.00p -->
         <div class="row 5p">
-            <div class="col-sm-2 time">
+            <div class="col-2 time">
                 <p>5.00pm</p>
             </div>
-            <div id="17h" class="col-sm-8 event" data-hour="17">
+            <div id="17" class="col-8 event" data-toggle="tooltip" data-placement="top" data-trigger="focus" title="Don't forget to save your change by clicking the save button on the right!">
                 <p contentEditable>I am a sample event</p>
             </div>
-            <div class="col-sm-2 save">
+            <div onclick="addEvent('17')" class="col-2 save">
                 <svg class="bi bi-lock-fill locked" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="9" x="2.5" y="7" rx="2"/>
                     <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
@@ -207,14 +209,14 @@
             </div>
         </div>
         <!-- 6.00p -->
-        <div class="row 6p mb-5">
-            <div class="col-sm-2 time">
+        <div class="row 6p">
+            <div class="col-2 time">
                 <p>6.00pm</p>
             </div>
-            <div id="18h" class="col-sm-8 event" data-hour="18">
+            <div id="18" class="col-8 event" data-toggle="tooltip" data-placement="top" data-trigger="focus" title="Don't forget to save your change by clicking the save button on the right!">
                 <p contentEditable>I am a sample event</p>
             </div>
-            <div class="col-sm-2 save">
+            <div onclick="addEvent('18')" class="col-2 save">
                 <svg class="bi bi-lock-fill locked" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="9" x="2.5" y="7" rx="2"/>
                     <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
@@ -224,7 +226,33 @@
                 </svg>
             </div>
         </div>
-      </div>
+
+
+    <!-- Clear schedule -->
+        <div class="mt-2 mb-5">
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#confirmClear">Clear schedule</button>
+        </div>
+  
+        <!-- Clear schedule modal -->
+        <div class="modal fade" id="confirmClear" tabindex="-1" role="dialog" aria-labelledby="confirmClearLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="confirmClearLabel">Are you sure?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                You're about to clear today's schedule and delete all events, which cannot be undone.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="clearSchedule()">Yes, clear schedule</button>
+                </div>
+            </div>
+            </div>
+        </div>
 
     </div>
 
@@ -238,6 +266,8 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
