@@ -36,7 +36,7 @@ for(i=8; i < 19; i++){
     } if(currentHour == i){
         document.getElementById(`${i}`).style = "background-color: #2C4251; color: white; border-right: 3px solid white;";
     } if(currentHour > i){
-        document.getElementById(`${i}`).style = "background-color: #ebebeb; color: black;";
+        document.getElementById(`${i}`).style = "background-color: #dbdbdb; color: black;";
     } if(currentHour > 18){
         document.getElementById("notification").textContent = `It's ${currentHourUS}.00${amPm}. Your workday is over and all events are completed. Check back tomorrow!`;
     }
