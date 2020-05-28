@@ -6,7 +6,7 @@ This is a simple daily schedule planner. Users can see timeslots for each busine
 
 ### 2. Features
 #### 2.1 General user flow
-Upon loading the applications, users are presented with a timeslot-based overview of their workday. In the header they find the current date. The main are of the application consists of editable timeslots where users can log events for their workday. The events are stored in local storage, so users can leave the application and re-visit the page throughout the day. Beneath the timeslots is a button that allows users to clear the schedule.
+Upon loading the applications, users are presented with a timeslot-based overview of their workday. In the header they find the current date. The main are of the application consists of editable timeslots where users can log events for their workday. The events are stored in local storage, so users can leave the application and re-visit the page throughout the day. Beneath the timeslots is a button that allows users to clear the schedule. The application also features a sticky footer.
 ![Screenshot of the application](https://github.com/cestmarcel/uoft-planner/blob/master/assets/screenshots/application.png)
 
 #### 2.2 Color coding
@@ -18,6 +18,7 @@ A tooltip above the respective timeslots ensures that the user does not forget t
 
 #### 2.3 Interface responding to cursor position
 ![UI reponse to cursor position](https://github.com/cestmarcel/uoft-planner/blob/master/assets/screenshots/planner.gif)
+
 Some elements of the user interface resond if hovered. The time indicator changes color, the event name becomes bold, and the lock in the save-button opens while the button itself darkens. These features are supposed to help the user navigate the interface.
 ![Screenshot of the application](https://github.com/cestmarcel/uoft-planner/blob/master/assets/screenshots/color-code.png)
 
@@ -27,7 +28,7 @@ If the application is being accessed outside business hours (after 6.59pm), a no
 
 #### 2.5 Clearing the schedule
 If the user decides to clear the schedule, they can do so by clicking the "Clear schedule" button on the bottom of the page. This triggers a modal used to make the user confirm their choice and to avoid accidental clearing of the schedule.
-![Screenshot of the application](https://github.com/cestmarcel/uoft-planner/blob/master/assets/screenshots/application.png)
+![Screenshot of the application](https://github.com/cestmarcel/uoft-planner/blob/master/assets/screenshots/modal.png)
 
 ### 3. External APIs, Libraries, and Frameworks 
 - This application uses moment.js https://momentjs.com/ to access and format the current time to color code the event slots as well as display the current time in the "after work view". Documentation for moment.js is available under: https://momentjs.com/docs/
