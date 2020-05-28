@@ -20,7 +20,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4">Daily planner</h1>
-          <p class="lead">Hi! This is your daily overview for <b><span id="header-date"></span></b>!</p>
+          <p class="lead">Hi! This is your daily schedule for <b><span id="header-date"></span></b>!</p>
         </div>
       </div>
 
@@ -31,7 +31,7 @@
             <div class="col-sm-2 time">
                 <p>8.00am</p>
             </div>
-            <div class="col-sm-8 past-event">
+            <div id="8h" class="col-sm-8 event" data-hour="8">
                 <p contentEditable>I am a sample event</p>
             </div>
             <div class="col-sm-2 save">
@@ -49,7 +49,7 @@
             <div class="col-sm-2 time">
                 <p>9.00am</p>
             </div>
-            <div class="col-sm-8 past-event">
+            <div id="9h" class="col-sm-8 event" data-hour="9">
                 <p contentEditable>I am a sample event</p>
             </div>
             <div class="col-sm-2 save">
@@ -67,10 +67,10 @@
             <div class="col-sm-2 time">
                 <p>10.00am</p>
             </div>
-            <div class="col-sm-8 past-event">
+            <div id="10h" class="col-sm-8 event" data-hour="10">
                 <p contentEditable>I am a sample event</p>
             </div>
-            <div class="col-sm-2 save"">
+            <div class="col-sm-2 save">
                 <svg class="bi bi-lock-fill locked" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="9" x="2.5" y="7" rx="2"/>
                     <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
@@ -85,10 +85,10 @@
             <div class="col-sm-2 time">
                 <p>11.00am</p>
             </div>
-            <div class="col-sm-8 past-event">
+            <div id="11h" class="col-sm-8 event" data-hour="11">
                 <p contentEditable>I am a sample event</p>
             </div>
-            <div class="col-sm-2 save"">
+            <div class="col-sm-2 save">
                 <svg class="bi bi-lock-fill locked" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="9" x="2.5" y="7" rx="2"/>
                     <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
@@ -103,10 +103,10 @@
             <div class="col-sm-2 time">
                 <p>12.00pm</p>
             </div>
-            <div class="col-sm-8 past-event">
+            <div id="12h" class="col-sm-8 event" data-hour="12">
                 <p contentEditable>I am a sample event</p>
             </div>
-            <div class="col-sm-2 save"">
+            <div class="col-sm-2 save">
                 <svg class="bi bi-lock-fill locked" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <rect width="11" height="9" x="2.5" y="7" rx="2"/>
                     <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
@@ -121,7 +121,7 @@
             <div class="col-sm-2 time">
                 <p>1.00pm</p>
             </div>
-            <div class="col-sm-8 active-event">
+            <div id="13h" class="col-sm-8 event" data-hour="13">
                 <p contentEditable>I am a sample active event</p>
             </div>
             <div class="col-sm-2 save">
@@ -139,7 +139,7 @@
             <div class="col-sm-2 time">
                 <p>2.00pm</p>
             </div>
-            <div class="col-sm-8 future-event">
+            <div id="14h" class="col-sm-8 event" data-hour="14">
                 <p contentEditable>I am a sample event</p>
             </div>
             <div class="col-sm-2 save">
@@ -157,7 +157,7 @@
             <div class="col-sm-2 time">
                 <p>3.00pm</p>
             </div>
-            <div class="col-sm-8 future-event">
+            <div id="15h" class="col-sm-8 event" data-hour="15">
                 <p contentEditable>I am a sample event</p>
             </div>
             <div class="col-sm-2 save">
@@ -175,7 +175,7 @@
             <div class="col-sm-2 time">
                 <p>4.00pm</p>
             </div>
-            <div class="col-sm-8 future-event">
+            <div id="16h" class="col-sm-8 event" data-hour="16">
                 <p contentEditable>I am a sample event</p>
             </div>
             <div class="col-sm-2 save">
@@ -193,7 +193,7 @@
             <div class="col-sm-2 time">
                 <p>5.00pm</p>
             </div>
-            <div class="col-sm-8 future-event">
+            <div id="17h" class="col-sm-8 event" data-hour="17">
                 <p contentEditable>I am a sample event</p>
             </div>
             <div class="col-sm-2 save">
@@ -211,7 +211,7 @@
             <div class="col-sm-2 time">
                 <p>6.00pm</p>
             </div>
-            <div class="col-sm-8 future-event">
+            <div id="18h" class="col-sm-8 event" data-hour="18">
                 <p contentEditable>I am a sample event</p>
             </div>
             <div class="col-sm-2 save">

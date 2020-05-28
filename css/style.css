@@ -45,28 +45,20 @@ p {
     color: white;
 }
 
-.past-event {
+.event {
     background-color: #fafafa;
     padding: 15px 5px;
     text-align: left;
     margin: auto;
 }
 
-.active-event {
-    background-color: #2C4251;
-    padding: 15px 5px;
-    text-align: left;
-    margin: auto;
-    color: white;
-    border-right: 3px solid white;
-}
+/* background-color: #2C4251;
+color: white;
+border-right: 3px solid white; */
 
-.future-event {
-    background-color: #ebebeb;
-    padding: 15px 5px;
-    text-align: left;
-    margin: auto;
-}
+
+/* background-color: #ebebeb; */
+
 
 .save {
     background-color: #FF784F;
